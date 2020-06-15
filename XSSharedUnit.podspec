@@ -10,9 +10,9 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'XSSharedUnit/**/*.{m,h}'
   s.frameworks = 'UIKit', 'Foundation', 'SystemConfiguration'
-  spec.dependency "AFNetworking"
-  # s.libraries = 'z'
-  # s.default_subspec = 'ZhugeioAnalytics'
+  s.dependency "AFNetworking"
+  # s.libraries = 's'
+  # s.default_subspec = 'XSSharedUnit'
 
 
 end
