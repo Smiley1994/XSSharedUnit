@@ -8,12 +8,72 @@
 
 /* Begin PBXBuildFile section */
 		5F37ABDE24975AC200AEEF6F /* XSSharedUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F37ABDC24975AC200AEEF6F /* XSSharedUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F37AC1024975FEA00AEEF6F /* XSNetRequestError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F37ABE524975FE900AEEF6F /* XSNetRequestError.m */; };
+		5F37AC1124975FEA00AEEF6F /* UIViewController+XSNetRequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F37ABE624975FE900AEEF6F /* UIViewController+XSNetRequestManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F37AC1224975FEA00AEEF6F /* XSNetRequestProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F37ABE724975FE900AEEF6F /* XSNetRequestProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F37AC1324975FEA00AEEF6F /* XSNetRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F37ABE824975FE900AEEF6F /* XSNetRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F37AC1424975FEA00AEEF6F /* XSNetRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F37ABE924975FE900AEEF6F /* XSNetRequestManager.m */; };
+		5F37AC1524975FEA00AEEF6F /* UIViewController+XSNetRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F37ABEA24975FE900AEEF6F /* UIViewController+XSNetRequestManager.m */; };
+		5F37AC1624975FEA00AEEF6F /* XSNetRequestError.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F37ABEB24975FE900AEEF6F /* XSNetRequestError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F37AC1724975FEA00AEEF6F /* XSNetRequestErrorCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F37ABEC24975FE900AEEF6F /* XSNetRequestErrorCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F37AC1824975FEA00AEEF6F /* XSNetRequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F37ABED24975FE900AEEF6F /* XSNetRequestManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F37AC1924975FEA00AEEF6F /* XSNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F37ABEE24975FE900AEEF6F /* XSNetRequest.m */; };
+		5F37AC1A24975FEA00AEEF6F /* XSNetRequestProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F37ABEF24975FE900AEEF6F /* XSNetRequestProgress.m */; };
+		5F37AC1B24975FEA00AEEF6F /* XSUITextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F37ABF124975FE900AEEF6F /* XSUITextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F37AC1C24975FEA00AEEF6F /* XSLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F37ABF224975FE900AEEF6F /* XSLoadingView.m */; };
+		5F37AC1D24975FEA00AEEF6F /* XSUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F37ABF324975FE900AEEF6F /* XSUITextField.m */; };
+		5F37AC1E24975FEA00AEEF6F /* XSLoadingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F37ABF424975FE900AEEF6F /* XSLoadingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F37AC2724975FEA00AEEF6F /* NSObject+CrashHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F37AC0224975FEA00AEEF6F /* NSObject+CrashHandle.m */; };
+		5F37AC2824975FEA00AEEF6F /* UIView+Action.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F37AC0324975FEA00AEEF6F /* UIView+Action.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F37AC2924975FEA00AEEF6F /* UIView+ExtraTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F37AC0424975FEA00AEEF6F /* UIView+ExtraTag.m */; };
+		5F37AC2A24975FEA00AEEF6F /* NSObject+Swizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F37AC0524975FEA00AEEF6F /* NSObject+Swizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F37AC2B24975FEA00AEEF6F /* UIView+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F37AC0624975FEA00AEEF6F /* UIView+Action.m */; };
+		5F37AC2C24975FEA00AEEF6F /* NSObject+CrashHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F37AC0724975FEA00AEEF6F /* NSObject+CrashHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F37AC2D24975FEA00AEEF6F /* UIView+ExtraTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F37AC0824975FEA00AEEF6F /* UIView+ExtraTag.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F37AC2E24975FEA00AEEF6F /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F37AC0924975FEA00AEEF6F /* NSObject+Swizzling.m */; };
+		5F37AC2F24975FEA00AEEF6F /* XSUIFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F37AC0B24975FEA00AEEF6F /* XSUIFit.m */; };
+		5F37AC3024975FEA00AEEF6F /* XSUIUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F37AC0C24975FEA00AEEF6F /* XSUIUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F37AC3124975FEA00AEEF6F /* XSUIMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F37AC0D24975FEA00AEEF6F /* XSUIMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F37AC3224975FEA00AEEF6F /* XSUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F37AC0E24975FEA00AEEF6F /* XSUIUtils.m */; };
+		5F37AC3324975FEA00AEEF6F /* XSUIFit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F37AC0F24975FEA00AEEF6F /* XSUIFit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8A07A50D45C0E77FCA6A47B /* Pods_XSSharedUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839DECE1DCFC522E88FF76A4 /* Pods_XSSharedUnit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		354AC451D72123573C57CADA /* Pods-XSSharedUnit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSSharedUnit.release.xcconfig"; path = "Target Support Files/Pods-XSSharedUnit/Pods-XSSharedUnit.release.xcconfig"; sourceTree = "<group>"; };
 		5F37ABD924975AC200AEEF6F /* XSSharedUnit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XSSharedUnit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F37ABDC24975AC200AEEF6F /* XSSharedUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSSharedUnit.h; sourceTree = "<group>"; };
 		5F37ABDD24975AC200AEEF6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F37ABE524975FE900AEEF6F /* XSNetRequestError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSNetRequestError.m; sourceTree = "<group>"; };
+		5F37ABE624975FE900AEEF6F /* UIViewController+XSNetRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XSNetRequestManager.h"; sourceTree = "<group>"; };
+		5F37ABE724975FE900AEEF6F /* XSNetRequestProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSNetRequestProgress.h; sourceTree = "<group>"; };
+		5F37ABE824975FE900AEEF6F /* XSNetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSNetRequest.h; sourceTree = "<group>"; };
+		5F37ABE924975FE900AEEF6F /* XSNetRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSNetRequestManager.m; sourceTree = "<group>"; };
+		5F37ABEA24975FE900AEEF6F /* UIViewController+XSNetRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XSNetRequestManager.m"; sourceTree = "<group>"; };
+		5F37ABEB24975FE900AEEF6F /* XSNetRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSNetRequestError.h; sourceTree = "<group>"; };
+		5F37ABEC24975FE900AEEF6F /* XSNetRequestErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSNetRequestErrorCode.h; sourceTree = "<group>"; };
+		5F37ABED24975FE900AEEF6F /* XSNetRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSNetRequestManager.h; sourceTree = "<group>"; };
+		5F37ABEE24975FE900AEEF6F /* XSNetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSNetRequest.m; sourceTree = "<group>"; };
+		5F37ABEF24975FE900AEEF6F /* XSNetRequestProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSNetRequestProgress.m; sourceTree = "<group>"; };
+		5F37ABF124975FE900AEEF6F /* XSUITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSUITextField.h; sourceTree = "<group>"; };
+		5F37ABF224975FE900AEEF6F /* XSLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSLoadingView.m; sourceTree = "<group>"; };
+		5F37ABF324975FE900AEEF6F /* XSUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSUITextField.m; sourceTree = "<group>"; };
+		5F37ABF424975FE900AEEF6F /* XSLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSLoadingView.h; sourceTree = "<group>"; };
+		5F37AC0224975FEA00AEEF6F /* NSObject+CrashHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CrashHandle.m"; sourceTree = "<group>"; };
+		5F37AC0324975FEA00AEEF6F /* UIView+Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Action.h"; sourceTree = "<group>"; };
+		5F37AC0424975FEA00AEEF6F /* UIView+ExtraTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ExtraTag.m"; sourceTree = "<group>"; };
+		5F37AC0524975FEA00AEEF6F /* NSObject+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
+		5F37AC0624975FEA00AEEF6F /* UIView+Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Action.m"; sourceTree = "<group>"; };
+		5F37AC0724975FEA00AEEF6F /* NSObject+CrashHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CrashHandle.h"; sourceTree = "<group>"; };
+		5F37AC0824975FEA00AEEF6F /* UIView+ExtraTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ExtraTag.h"; sourceTree = "<group>"; };
+		5F37AC0924975FEA00AEEF6F /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
+		5F37AC0B24975FEA00AEEF6F /* XSUIFit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSUIFit.m; sourceTree = "<group>"; };
+		5F37AC0C24975FEA00AEEF6F /* XSUIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSUIUtils.h; sourceTree = "<group>"; };
+		5F37AC0D24975FEA00AEEF6F /* XSUIMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSUIMacro.h; sourceTree = "<group>"; };
+		5F37AC0E24975FEA00AEEF6F /* XSUIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSUIUtils.m; sourceTree = "<group>"; };
+		5F37AC0F24975FEA00AEEF6F /* XSUIFit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSUIFit.h; sourceTree = "<group>"; };
+		839DECE1DCFC522E88FF76A4 /* Pods_XSSharedUnit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XSSharedUnit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A506A3B7B9BA3B5F779C91EB /* Pods-XSSharedUnit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSSharedUnit.debug.xcconfig"; path = "Target Support Files/Pods-XSSharedUnit/Pods-XSSharedUnit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +81,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8A07A50D45C0E77FCA6A47B /* Pods_XSSharedUnit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F389C8957E3458992346ACD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A506A3B7B9BA3B5F779C91EB /* Pods-XSSharedUnit.debug.xcconfig */,
+				354AC451D72123573C57CADA /* Pods-XSSharedUnit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5F37ABCF24975AC200AEEF6F = {
 			isa = PBXGroup;
 			children = (
 				5F37ABDB24975AC200AEEF6F /* XSSharedUnit */,
 				5F37ABDA24975AC200AEEF6F /* Products */,
+				1F389C8957E3458992346ACD /* Pods */,
+				C99C941FF241FBC89C6EC5BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +118,78 @@
 		5F37ABDB24975AC200AEEF6F /* XSSharedUnit */ = {
 			isa = PBXGroup;
 			children = (
+				5F37AC0124975FEA00AEEF6F /* Category */,
+				5F37AC0A24975FEA00AEEF6F /* UI */,
+				5F37ABF024975FE900AEEF6F /* Views */,
+				5F37ABE424975FE900AEEF6F /* XSNetRequest */,
 				5F37ABDC24975AC200AEEF6F /* XSSharedUnit.h */,
 				5F37ABDD24975AC200AEEF6F /* Info.plist */,
 			);
 			path = XSSharedUnit;
+			sourceTree = "<group>";
+		};
+		5F37ABE424975FE900AEEF6F /* XSNetRequest */ = {
+			isa = PBXGroup;
+			children = (
+				5F37ABE624975FE900AEEF6F /* UIViewController+XSNetRequestManager.h */,
+				5F37ABEA24975FE900AEEF6F /* UIViewController+XSNetRequestManager.m */,
+				5F37ABE824975FE900AEEF6F /* XSNetRequest.h */,
+				5F37ABEE24975FE900AEEF6F /* XSNetRequest.m */,
+				5F37ABEB24975FE900AEEF6F /* XSNetRequestError.h */,
+				5F37ABE524975FE900AEEF6F /* XSNetRequestError.m */,
+				5F37ABEC24975FE900AEEF6F /* XSNetRequestErrorCode.h */,
+				5F37ABED24975FE900AEEF6F /* XSNetRequestManager.h */,
+				5F37ABE924975FE900AEEF6F /* XSNetRequestManager.m */,
+				5F37ABE724975FE900AEEF6F /* XSNetRequestProgress.h */,
+				5F37ABEF24975FE900AEEF6F /* XSNetRequestProgress.m */,
+			);
+			path = XSNetRequest;
+			sourceTree = "<group>";
+		};
+		5F37ABF024975FE900AEEF6F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5F37ABF424975FE900AEEF6F /* XSLoadingView.h */,
+				5F37ABF224975FE900AEEF6F /* XSLoadingView.m */,
+				5F37ABF124975FE900AEEF6F /* XSUITextField.h */,
+				5F37ABF324975FE900AEEF6F /* XSUITextField.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5F37AC0124975FEA00AEEF6F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				5F37AC0724975FEA00AEEF6F /* NSObject+CrashHandle.h */,
+				5F37AC0224975FEA00AEEF6F /* NSObject+CrashHandle.m */,
+				5F37AC0524975FEA00AEEF6F /* NSObject+Swizzling.h */,
+				5F37AC0924975FEA00AEEF6F /* NSObject+Swizzling.m */,
+				5F37AC0324975FEA00AEEF6F /* UIView+Action.h */,
+				5F37AC0624975FEA00AEEF6F /* UIView+Action.m */,
+				5F37AC0824975FEA00AEEF6F /* UIView+ExtraTag.h */,
+				5F37AC0424975FEA00AEEF6F /* UIView+ExtraTag.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		5F37AC0A24975FEA00AEEF6F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5F37AC0F24975FEA00AEEF6F /* XSUIFit.h */,
+				5F37AC0B24975FEA00AEEF6F /* XSUIFit.m */,
+				5F37AC0D24975FEA00AEEF6F /* XSUIMacro.h */,
+				5F37AC0C24975FEA00AEEF6F /* XSUIUtils.h */,
+				5F37AC0E24975FEA00AEEF6F /* XSUIUtils.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C99C941FF241FBC89C6EC5BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				839DECE1DCFC522E88FF76A4 /* Pods_XSSharedUnit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +199,22 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F37AC1E24975FEA00AEEF6F /* XSLoadingView.h in Headers */,
+				5F37AC1124975FEA00AEEF6F /* UIViewController+XSNetRequestManager.h in Headers */,
+				5F37AC1624975FEA00AEEF6F /* XSNetRequestError.h in Headers */,
+				5F37AC3024975FEA00AEEF6F /* XSUIUtils.h in Headers */,
+				5F37AC1224975FEA00AEEF6F /* XSNetRequestProgress.h in Headers */,
+				5F37AC3124975FEA00AEEF6F /* XSUIMacro.h in Headers */,
+				5F37AC2A24975FEA00AEEF6F /* NSObject+Swizzling.h in Headers */,
+				5F37AC1824975FEA00AEEF6F /* XSNetRequestManager.h in Headers */,
 				5F37ABDE24975AC200AEEF6F /* XSSharedUnit.h in Headers */,
+				5F37AC1324975FEA00AEEF6F /* XSNetRequest.h in Headers */,
+				5F37AC2D24975FEA00AEEF6F /* UIView+ExtraTag.h in Headers */,
+				5F37AC1724975FEA00AEEF6F /* XSNetRequestErrorCode.h in Headers */,
+				5F37AC2C24975FEA00AEEF6F /* NSObject+CrashHandle.h in Headers */,
+				5F37AC1B24975FEA00AEEF6F /* XSUITextField.h in Headers */,
+				5F37AC2824975FEA00AEEF6F /* UIView+Action.h in Headers */,
+				5F37AC3324975FEA00AEEF6F /* XSUIFit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F37ABE124975AC200AEEF6F /* Build configuration list for PBXNativeTarget "XSSharedUnit" */;
 			buildPhases = (
+				1B9BBA6DC56395EB31BBCC71 /* [CP] Check Pods Manifest.lock */,
 				5F37ABD424975AC200AEEF6F /* Headers */,
 				5F37ABD524975AC200AEEF6F /* Sources */,
 				5F37ABD624975AC200AEEF6F /* Frameworks */,
@@ -126,11 +282,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B9BBA6DC56395EB31BBCC71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XSSharedUnit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5F37ABD524975AC200AEEF6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F37AC3224975FEA00AEEF6F /* XSUIUtils.m in Sources */,
+				5F37AC2924975FEA00AEEF6F /* UIView+ExtraTag.m in Sources */,
+				5F37AC2724975FEA00AEEF6F /* NSObject+CrashHandle.m in Sources */,
+				5F37AC2E24975FEA00AEEF6F /* NSObject+Swizzling.m in Sources */,
+				5F37AC2F24975FEA00AEEF6F /* XSUIFit.m in Sources */,
+				5F37AC1C24975FEA00AEEF6F /* XSLoadingView.m in Sources */,
+				5F37AC1A24975FEA00AEEF6F /* XSNetRequestProgress.m in Sources */,
+				5F37AC2B24975FEA00AEEF6F /* UIView+Action.m in Sources */,
+				5F37AC1924975FEA00AEEF6F /* XSNetRequest.m in Sources */,
+				5F37AC1D24975FEA00AEEF6F /* XSUITextField.m in Sources */,
+				5F37AC1424975FEA00AEEF6F /* XSNetRequestManager.m in Sources */,
+				5F37AC1524975FEA00AEEF6F /* UIViewController+XSNetRequestManager.m in Sources */,
+				5F37AC1024975FEA00AEEF6F /* XSNetRequestError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +449,7 @@
 		};
 		5F37ABE224975AC200AEEF6F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A506A3B7B9BA3B5F779C91EB /* Pods-XSSharedUnit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -264,6 +459,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = XSSharedUnit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -278,6 +474,7 @@
 		};
 		5F37ABE324975AC200AEEF6F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 354AC451D72123573C57CADA /* Pods-XSSharedUnit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -287,6 +484,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = XSSharedUnit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

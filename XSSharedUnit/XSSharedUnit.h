@@ -7,6 +7,31 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "XSUIFit.h"
+#import "XSUIUtils"
+#import "XSUIMacro.h"
+
+
+#import "XSLoadingView.h"
+#import "XSUITextField.h"
+
+
+#import "XSNetRequest.h"
+#import "XSNetRequestManager.h"
+#import "XSNetRequestError.h"
+#import "XSNetRequestErrorCode.h"
+#import "XSNetRequestProgress.h"
+
+
+#import "UIViewController+XSNetRequestManager.h"
+
+#import "NSObject+CrashHandle.h"
+#import "NSObject+Swizzling.h"
+#import "NSObject+CrashHandle.h"
+#import "UIView+Action.h"
+#import "UIView+ExtraTag.h"
+
+
 
 //! Project version number for XSSharedUnit.
 FOUNDATION_EXPORT double XSSharedUnitVersionNumber;
@@ -17,3 +42,4 @@ FOUNDATION_EXPORT const unsigned char XSSharedUnitVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <XSSharedUnit/PublicHeader.h>
 
 
+#import
