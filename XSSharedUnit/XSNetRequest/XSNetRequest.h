@@ -42,6 +42,10 @@ FOUNDATION_EXTERN NSString *const REQUEST_METHOD_POST;
 - (NSDictionary *)getParameters;
 - (NSDictionary *)parameters;
 
+- (void)setHeaders:(NSDictionary *)headers;
+- (NSDictionary *)getHeaders;
+- (NSDictionary *)headers;
+
 - (instancetype)initWithUrl:(NSString *)url andWhat:(NSInteger)what;
 - (instancetype)initWithUrl:(NSString *)url andWhat:(NSInteger)what andMethod:(NSString *)method;
 

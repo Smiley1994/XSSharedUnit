@@ -35,7 +35,8 @@ NSString *const REQUEST_METHOD_POST = @"POST";
 @property (nonatomic,assign) NSInteger what;
 @property (nonatomic,strong) NSString *method;
 @property (nonatomic,assign) BOOL isAjax;
-@property (nonatomic,strong) NSMutableDictionary *paramters;
+@property (nonatomic,strong) NSMutableDictionary *selfParameters;
+@property (nonatomic,strong) NSMutableDictionary *selfHeaders;
 
 @end
 
@@ -66,7 +67,8 @@ NSString *const REQUEST_METHOD_POST = @"POST";
         self.url = url;
         self.what = what;
         self.method = method;
-        self.paramters = [[NSMutableDictionary alloc] init];
+        self.selfParameters = [[NSMutableDictionary alloc] init];
+        self.selfHeaders = [[NSMutableDictionary alloc] init];
         self.userAgent = @"app/ios";
     }
     return self;
@@ -106,12 +108,12 @@ NSString *const REQUEST_METHOD_POST = @"POST";
 
 
 - (void)setParameters:(NSDictionary *)parameters {
-    _paramters = [NSMutableDictionary dictionaryWithDictionary:parameters];
+    self.selfParameters = [NSMutableDictionary dictionaryWithDictionary:parameters];
 }
 
 - (NSDictionary *)getParameters {
-    NSMutableDictionary *temp = [[NSMutableDictionary alloc] init];
-    [self.paramters enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+    __block NSMutableDictionary *temp = [[NSMutableDictionary alloc] init];
+    [self.selfParameters enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
         if (![obj isKindOfClass:[UIImage class]]) {
             [temp setObject:obj forKey:key];
         }
@@ -123,8 +125,33 @@ NSString *const REQUEST_METHOD_POST = @"POST";
     return [self getParameters];
 }
 
-- (void)setValue:(id)value forKey:(NSString *)key {
-    [self.paramters setObject:value forKey:key];
+- (void)setParametersValue:(id)value forKey:(NSString *)key {
+    [self.selfParameters setObject:value forKey:key];
 }
+
+
+- (void)setHeaders:(NSDictionary *)headers {
+    self.selfHeaders = [[NSMutableDictionary alloc] initWithDictionary:headers];
+}
+
+
+- (NSDictionary *)getHeaders {
+    __block NSMutableDictionary *temp = [[NSMutableDictionary alloc] init];
+    [self.selfHeaders enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        if (![obj isKindOfClass:[UIImage class]]) {
+            [temp setObject:obj forKey:key];
+        }
+    }];
+    return temp;
+}
+
+- (NSDictionary *)headers {
+    return [self getHeaders];
+}
+
+- (void)setHeaderValue:(id)value forKey:(NSString *)key {
+    [self.selfHeaders setObject:value forKey:key];
+}
+
 
 @end

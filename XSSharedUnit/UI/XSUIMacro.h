@@ -18,6 +18,19 @@
 #define SCALE_SIZE   ([UIScreen mainScreen].bounds.size.width / 375.0)//适配尺寸宏
 #define NAVIGATION_HEIGHT 64.0
 
+#define kWindow [(AppDelegate *)[[UIApplication sharedApplication] delegate] window]
+#define IOS11_OR_LATER_SPACE(par) \
+({\
+float space = 0.0;\
+if (@available(iOS 11.0, *))\
+space = par;\
+(space);\
+})
+
+#define TOP_SPACE IOS11_OR_LATER_SPACE(kWindow.safeAreaInsets.top)
+#define TOP_ACTIVE_SPACE IOS11_OR_LATER_SPACE(MAX(0, kWindow.safeAreaInsets.top-20))
+#define BOTTOM_SPACE IOS11_OR_LATER_SPACE(kWindow.safeAreaInsets.bottom)
+
 #pragma mark - CGRect
 #define RECT_X(f) f.origin.x
 #define RECT_Y(f) f.origin.y

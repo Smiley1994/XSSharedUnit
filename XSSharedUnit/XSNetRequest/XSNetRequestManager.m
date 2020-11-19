@@ -136,6 +136,8 @@ static NSTimeInterval const XSNetRequestTimeoutInterval = 30;
     
     NSDictionary *parameters = [request getParameters];
     
+    NSDictionary *headers = [request getHeaders];
+    
     NSInteger what = [request getWhat];
     
     BOOL isAjax = [request isAjax];
@@ -150,7 +152,7 @@ static NSTimeInterval const XSNetRequestTimeoutInterval = 30;
     NSURLSessionTask *task;
     
     if ([method isEqualToString:REQUEST_METHOD_GET]) {
-        task = [self.manager GET:url parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
+        task = [self.manager GET:url parameters:parameters headers:headers progress:^(NSProgress * _Nonnull downloadProgress) {
             self.requestProgress(delegate, what, url, request, downloadProgress, attach);
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             self.requestSucceed(delegate, what, url, request, responseObject, attach);
@@ -160,12 +162,10 @@ static NSTimeInterval const XSNetRequestTimeoutInterval = 30;
     }
     
     else if ([method isEqualToString:REQUEST_METHOD_POST]) {
-     
-        task = [self.manager POST:url parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+        task = [self.manager POST:url parameters:parameters headers:headers progress:^(NSProgress * _Nonnull uploadProgress) {
             self.requestProgress(delegate, what, url, request, uploadProgress, attach);
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             self.requestSucceed(delegate, what, url, request, responseObject, attach);
-            
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             self.requestFailed(delegate, what, url, request, error, attach);
         }];
