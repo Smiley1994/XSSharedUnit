@@ -1,10 +1,3 @@
-//
-//  XSPhoneDefine.h
-//  PhoneInfoDemo
-//
-//  Created by 李飞 on 2019/6/1.
-//  Copyright © 2019 PacteraXS. All rights reserved.
-//
 
 #ifndef XSPhoneDefine_h
 #define XSPhoneDefine_h

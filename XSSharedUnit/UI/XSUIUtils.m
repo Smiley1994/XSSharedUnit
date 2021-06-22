@@ -9,14 +9,107 @@
 #import "XSUIUtils.h"
 #import <sys/utsname.h>
 #import <Accelerate/Accelerate.h>
+#import "XSUIMacro.h"
+#import "UIDevice+XSDeviceInfo.h"
 
 @implementation XSUIUtils
 
+/**
+ * 设备名称  iPhone 4
+ * 屏幕尺寸  3.7Inch
+ * 密度
+ */
++ (BOOL)isThreeSevenInchDevice {
+    return (SCREEN_WIDTH == 320 && SCREEN_HEIGHT == 480) || (SCREEN_WIDTH == 480 && SCREEN_HEIGHT == 320);
+}
+
+/**
+ * 设备名称   iPhone SE（SE, 5S, 5C）
+ * 屏幕尺寸   4.0Inch
+ * 密度dpi     2.0 xhdpi
+ */
++ (BOOL)isFourZeroInchDevice {
+    return (SCREEN_WIDTH == 320 && SCREEN_HEIGHT == 568) || (SCREEN_WIDTH == 568 && SCREEN_HEIGHT == 320);
+}
+
+/**
+ * 设备名称   iPhone 8 (8, 7, 6S, 6)
+ * 屏幕尺寸   4.7Inch
+ * 密度dpi     2.0 xhdpi
+ */
++ (BOOL)isFourSevenInchDevice {
+    return (SCREEN_WIDTH == 375 && SCREEN_HEIGHT == 667) || (SCREEN_WIDTH == 667 && SCREEN_HEIGHT == 375);
+}
+
+/**
+ * 设备名称   iPhone 8+ (8+, 7+, 6S+, 6+)
+ * 屏幕尺寸   5.5Inch
+ * 密度dpi     3.0 xxhdpi
+ */
++ (BOOL)isFiveFiveInchDevice {
+    return (SCREEN_WIDTH == 414 && SCREEN_HEIGHT == 736) || (SCREEN_WIDTH == 736 && SCREEN_HEIGHT == 414);
+}
+
+/**
+ * 设备名称   iPhone X (X, XS, 11 Pro)
+ * 屏幕尺寸   5.8Inch
+ * 密度dpi     3.0 xxhdpi
+ */
++ (BOOL)isFiveEightInchDevice {
+    return (SCREEN_WIDTH == 375 && SCREEN_HEIGHT == 812) || (SCREEN_WIDTH == 812 && SCREEN_HEIGHT == 375);
+}
+
+
+/**
+ * 设备名称   iPhone X (11, XR)
+ * 屏幕尺寸   6.1Inch
+ * 密度dpi     2.0 xhdpi
+ */
++ (BOOL)isSixOneInchDevice {
+    return (SCREEN_WIDTH == 414 && SCREEN_HEIGHT == 896) || (SCREEN_WIDTH == 896 && SCREEN_HEIGHT == 414);
+}
+
+/**
+ * 设备名称   iPhone XS Max (11 Pro Max )
+ * 屏幕尺寸   6.5Inch
+ * 密度dpi     3.0 xxhdpi
+ */
++ (BOOL)isSixFiveInchDevice {
+    return (SCREEN_WIDTH == 414 && SCREEN_HEIGHT == 896) || (SCREEN_WIDTH == 896 && SCREEN_HEIGHT == 414);
+}
+
+/**
+ * 设备名称   iPhone 12 Pro
+ * 屏幕尺寸   6.1Inch
+ * 密度dpi     3.0 xxhdpi
+ */
++ (BOOL)isSixOneInchDevice12 {
+    return (SCREEN_WIDTH == 390 && SCREEN_HEIGHT == 844) || (SCREEN_WIDTH == 844 && SCREEN_HEIGHT == 390);
+}
+
+/**
+ * 设备名称   iPhone 12 Mini
+ * 屏幕尺寸   5.4Inch
+ * 密度dpi     3.0 xxhdpi
+ */
++ (BOOL)isFiveFourInchDevice {
+    return (SCREEN_WIDTH == 360 && SCREEN_HEIGHT == 780) || (SCREEN_WIDTH == 780 && SCREEN_HEIGHT == 360);
+}
+
+/**
+ * 设备名称   iPhone 12 Pro Max
+ * 屏幕尺寸   6.7Inch
+ * 密度dpi     3.0 xxhdpi
+ */
++ (BOOL)isSixSevenInchDevice {
+    return (SCREEN_WIDTH == 428 && SCREEN_HEIGHT == 926) || (SCREEN_WIDTH == 926 && SCREEN_HEIGHT == 428);
+}
+
 + (BOOL)isX {
-    if ([[self iphoneType] isEqualToString:@"iPhone X"] ||
-        [[self iphoneType] isEqualToString:@"iPhone XR"] ||
-        [[self iphoneType] isEqualToString:@"iPhone XS"] ||
-        [[self iphoneType] isEqualToString:@"iPhone XS Max"]) {
+    if ([[UIDevice getDeviceTypeString] isEqualToString:@"iPhone X"] ||
+        [[UIDevice getDeviceTypeString] isEqualToString:@"iPhone XR"] ||
+        [[UIDevice getDeviceTypeString] isEqualToString:@"iPhone XS"] ||
+        [[UIDevice getDeviceTypeString] isEqualToString:@"iPhone XS Max"]) {
         return YES;
     } else {
         return NO ;
@@ -24,143 +117,16 @@
 }
 
 + (BOOL)isIPad {
-    if ([[self iphoneType] containsString:@"iPad"]) {
+    if ([[UIDevice getDeviceTypeString] containsString:@"iPad"]) {
         return YES;
     } else {
         return NO;
     }
 }
 
-+ (NSString*)iphoneType {
-    
-    struct utsname systemInfo;
-    
-    uname(&systemInfo);
-    
-    NSString*platform = [NSString stringWithCString: systemInfo.machine encoding:NSASCIIStringEncoding];
-    
-    if([platform isEqualToString:@"iPhone3,1"]) return@"iPhone4";
-    
-    if([platform isEqualToString:@"iPhone3,2"]) return@"iPhone4";
-    
-    if([platform isEqualToString:@"iPhone3,3"]) return@"iPhone4";
-    
-    if([platform isEqualToString:@"iPhone4,1"]) return@"iPhone4S";
-    
-    if([platform isEqualToString:@"iPhone5,1"]) return@"iPhone5";
-    
-    if([platform isEqualToString:@"iPhone5,2"]) return@"iPhone5";
-    
-    if([platform isEqualToString:@"iPhone5,3"]) return@"iPhone5c";
-    
-    if([platform isEqualToString:@"iPhone5,4"]) return@"iPhone5c";
-    
-    if([platform isEqualToString:@"iPhone6,1"]) return@"iPhone5s";
-    
-    if([platform isEqualToString:@"iPhone6,2"]) return@"iPhone5s";
-    
-    if([platform isEqualToString:@"iPhone7,1"]) return@"iPhone6Plus";
-    
-    if([platform isEqualToString:@"iPhone7,2"]) return@"iPhone6";
-    
-    if([platform isEqualToString:@"iPhone8,1"]) return@"iPhone6s";
-    
-    if([platform isEqualToString:@"iPhone8,2"]) return@"iPhone6sPlus";
-    
-    if([platform isEqualToString:@"iPhone8,4"]) return@"iPhoneSE";
-    
-    if([platform isEqualToString:@"iPhone9,1"]) return@"iPhone7";
-    
-    if([platform isEqualToString:@"iPhone9,2"]) return@"iPhone7Plus";
-    
-    if([platform isEqualToString:@"iPhone10,1"] || [platform isEqualToString:@"iPhone10,4"]) return@"iPhone8";
-    
-    if([platform isEqualToString:@"iPhone10,2"] || [platform isEqualToString:@"iPhone10,5"]) return@"iPhone8Plus";
-    
-    if([platform isEqualToString:@"iPhone10,3"] || [platform isEqualToString:@"iPhone10,6"]) return@"iPhoneX";
-    
-    if([platform isEqualToString:@"iPhone11,8"]) return@"iPhoneXR";
-    
-    if([platform isEqualToString:@"iPhone11,2"]) return@"iPhoneXS";
-    
-    if([platform isEqualToString:@"iPhone11,6"]) return@"iPhoneXSMax";
-    
-    
-    if([platform isEqualToString:@"iPad2,1"]) return@"iPad2";
-    
-    if([platform isEqualToString:@"iPad2,2"]) return@"iPad2";
-    
-    if([platform isEqualToString:@"iPad2,3"]) return@"iPad2";
-    
-    if([platform isEqualToString:@"iPad2,4"]) return@"iPad2";
-    
-    if([platform isEqualToString:@"iPad2,5"]) return@"iPadMini1G";
-    
-    if([platform isEqualToString:@"iPad2,6"]) return@"iPadMini1G";
-    
-    if([platform isEqualToString:@"iPad2,7"]) return@"iPadMini1G";
-    
-    if([platform isEqualToString:@"iPad3,1"]) return@"iPad3";
-    
-    if([platform isEqualToString:@"iPad3,2"]) return@"iPad3";
-    
-    if([platform isEqualToString:@"iPad3,3"]) return@"iPad3";
-    
-    if([platform isEqualToString:@"iPad3,4"]) return@"iPad4";
-    
-    if([platform isEqualToString:@"iPad3,5"]) return@"iPad4";
-    
-    if([platform isEqualToString:@"iPad3,6"]) return@"iPad4";
-    
-    if([platform isEqualToString:@"iPad4,1"]) return@"iPadAir";
-    
-    if([platform isEqualToString:@"iPad4,2"]) return@"iPadAir";
-    
-    if([platform isEqualToString:@"iPad4,3"]) return@"iPadAir";
-    
-    if([platform isEqualToString:@"iPad4,4"]) return@"iPadMini2G";
-    
-    if([platform isEqualToString:@"iPad4,5"]) return@"iPadMini2G";
-    
-    if([platform isEqualToString:@"iPad4,6"]) return@"iPadMini2G";
-    
-    if([platform isEqualToString:@"iPad4,7"]) return@"iPadMini3";
-    
-    if([platform isEqualToString:@"iPad4,8"]) return@"iPadMini3";
-    
-    if([platform isEqualToString:@"iPad4,9"]) return@"iPadMini3";
-    
-    if([platform isEqualToString:@"iPad5,1"]) return@"iPadMini4";
-    
-    if([platform isEqualToString:@"iPad5,2"]) return@"iPadMini4";
-    
-    if([platform isEqualToString:@"iPad5,3"]) return@"iPadAir2";
-    
-    if([platform isEqualToString:@"iPad5,4"]) return@"iPadAir2";
-    
-    if([platform isEqualToString:@"iPad6,3"]) return@"iPadPro9.7";
-    
-    if([platform isEqualToString:@"iPad6,4"]) return@"iPadPro9.7";
-    
-    if([platform isEqualToString:@"iPad6,7"]) return@"iPadPro12.9";
-    
-    if([platform isEqualToString:@"iPad6,8"]) return@"iPadPro12.9";
-    
-    if([platform isEqualToString:@"i386"]) return@"iPhoneSimulator";
-    
-    if([platform isEqualToString:@"x86_64"]) return@"iPhoneSimulator";
-    
-    return platform;
-    
-}
 
 
-/**
- 高斯模糊
- @param image image
- @param blur (0 - 1 之间)
- @return image
- */
+
 + (UIImage *)boxblurImage:(UIImage *)image withBlurNumber:(CGFloat)blur{
     if (blur < 0.f || blur > 1.f) {
         blur = 0.5f;

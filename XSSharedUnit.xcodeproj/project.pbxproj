@@ -36,6 +36,8 @@
 		5F37AC3124975FEA00AEEF6F /* XSUIMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F37AC0D24975FEA00AEEF6F /* XSUIMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F37AC3224975FEA00AEEF6F /* XSUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F37AC0E24975FEA00AEEF6F /* XSUIUtils.m */; };
 		5F37AC3324975FEA00AEEF6F /* XSUIFit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F37AC0F24975FEA00AEEF6F /* XSUIFit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F42704325A43ACE0088DBDF /* DataUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F42704125A43ACE0088DBDF /* DataUtils.h */; };
+		5F42704425A43ACE0088DBDF /* DataUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F42704225A43ACE0088DBDF /* DataUtils.m */; };
 		5F6B253A24ED28D100BF1979 /* XSDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6B253824ED28D100BF1979 /* XSDeviceInfo.m */; };
 		5F6B253B24ED28D100BF1979 /* XSDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F6B253924ED28D100BF1979 /* XSDeviceInfo.h */; };
 		5F6B253D24ED290100BF1979 /* XSDeviceDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F6B253C24ED290100BF1979 /* XSDeviceDefine.h */; };
@@ -43,6 +45,10 @@
 		5F6B254124ED2AEC00BF1979 /* XSReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F6B253F24ED2AEC00BF1979 /* XSReachability.h */; };
 		5F6B254424ED2DEA00BF1979 /* UIDevice+XSDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F6B254224ED2DEA00BF1979 /* UIDevice+XSDeviceInfo.h */; };
 		5F6B254524ED2DEA00BF1979 /* UIDevice+XSDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6B254324ED2DEA00BF1979 /* UIDevice+XSDeviceInfo.m */; };
+		5FAD2F4B26818DD800B00743 /* XSArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FAD2F4926818DD800B00743 /* XSArray.h */; };
+		5FAD2F4C26818DD800B00743 /* XSArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FAD2F4A26818DD800B00743 /* XSArray.m */; };
+		5FAD2F512681C0DF00B00743 /* XSDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FAD2F4F2681C0DF00B00743 /* XSDictionary.h */; };
+		5FAD2F522681C0DF00B00743 /* XSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FAD2F502681C0DF00B00743 /* XSDictionary.m */; };
 		A8A07A50D45C0E77FCA6A47B /* Pods_XSSharedUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839DECE1DCFC522E88FF76A4 /* Pods_XSSharedUnit.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +85,8 @@
 		5F37AC0D24975FEA00AEEF6F /* XSUIMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSUIMacro.h; sourceTree = "<group>"; };
 		5F37AC0E24975FEA00AEEF6F /* XSUIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSUIUtils.m; sourceTree = "<group>"; };
 		5F37AC0F24975FEA00AEEF6F /* XSUIFit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSUIFit.h; sourceTree = "<group>"; };
+		5F42704125A43ACE0088DBDF /* DataUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataUtils.h; sourceTree = "<group>"; };
+		5F42704225A43ACE0088DBDF /* DataUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataUtils.m; sourceTree = "<group>"; };
 		5F6B253824ED28D100BF1979 /* XSDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSDeviceInfo.m; sourceTree = "<group>"; };
 		5F6B253924ED28D100BF1979 /* XSDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSDeviceInfo.h; sourceTree = "<group>"; };
 		5F6B253C24ED290100BF1979 /* XSDeviceDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSDeviceDefine.h; sourceTree = "<group>"; };
@@ -86,6 +94,10 @@
 		5F6B253F24ED2AEC00BF1979 /* XSReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSReachability.h; sourceTree = "<group>"; };
 		5F6B254224ED2DEA00BF1979 /* UIDevice+XSDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+XSDeviceInfo.h"; sourceTree = "<group>"; };
 		5F6B254324ED2DEA00BF1979 /* UIDevice+XSDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+XSDeviceInfo.m"; sourceTree = "<group>"; };
+		5FAD2F4926818DD800B00743 /* XSArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSArray.h; sourceTree = "<group>"; };
+		5FAD2F4A26818DD800B00743 /* XSArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSArray.m; sourceTree = "<group>"; };
+		5FAD2F4F2681C0DF00B00743 /* XSDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSDictionary.h; sourceTree = "<group>"; };
+		5FAD2F502681C0DF00B00743 /* XSDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSDictionary.m; sourceTree = "<group>"; };
 		839DECE1DCFC522E88FF76A4 /* Pods_XSSharedUnit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XSSharedUnit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A506A3B7B9BA3B5F779C91EB /* Pods-XSSharedUnit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSSharedUnit.debug.xcconfig"; path = "Target Support Files/Pods-XSSharedUnit/Pods-XSSharedUnit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,6 +229,12 @@
 		5FEE759C24D95CE3009A29BF /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				5F42704125A43ACE0088DBDF /* DataUtils.h */,
+				5F42704225A43ACE0088DBDF /* DataUtils.m */,
+				5FAD2F4926818DD800B00743 /* XSArray.h */,
+				5FAD2F4A26818DD800B00743 /* XSArray.m */,
+				5FAD2F4F2681C0DF00B00743 /* XSDictionary.h */,
+				5FAD2F502681C0DF00B00743 /* XSDictionary.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -247,11 +265,14 @@
 				5F37AC2A24975FEA00AEEF6F /* NSObject+Swizzling.h in Headers */,
 				5F37AC1824975FEA00AEEF6F /* XSNetRequestManager.h in Headers */,
 				5F6B254124ED2AEC00BF1979 /* XSReachability.h in Headers */,
+				5F42704325A43ACE0088DBDF /* DataUtils.h in Headers */,
 				5F37ABDE24975AC200AEEF6F /* XSSharedUnit.h in Headers */,
+				5FAD2F4B26818DD800B00743 /* XSArray.h in Headers */,
 				5F37AC1324975FEA00AEEF6F /* XSNetRequest.h in Headers */,
 				5F37AC2D24975FEA00AEEF6F /* UIView+ExtraTag.h in Headers */,
 				5F37AC1724975FEA00AEEF6F /* XSNetRequestErrorCode.h in Headers */,
 				5F6B253B24ED28D100BF1979 /* XSDeviceInfo.h in Headers */,
+				5FAD2F512681C0DF00B00743 /* XSDictionary.h in Headers */,
 				5F37AC2C24975FEA00AEEF6F /* NSObject+CrashHandle.h in Headers */,
 				5F37AC1B24975FEA00AEEF6F /* XSUITextField.h in Headers */,
 				5F37AC2824975FEA00AEEF6F /* UIView+Action.h in Headers */,
@@ -287,7 +308,7 @@
 		5F37ABD024975AC200AEEF6F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = Good_Morning_;
 				TargetAttributes = {
 					5F37ABD824975AC200AEEF6F = {
@@ -359,6 +380,8 @@
 				5F37AC2924975FEA00AEEF6F /* UIView+ExtraTag.m in Sources */,
 				5F37AC2724975FEA00AEEF6F /* NSObject+CrashHandle.m in Sources */,
 				5F37AC2E24975FEA00AEEF6F /* NSObject+Swizzling.m in Sources */,
+				5F42704425A43ACE0088DBDF /* DataUtils.m in Sources */,
+				5FAD2F522681C0DF00B00743 /* XSDictionary.m in Sources */,
 				5F37AC2F24975FEA00AEEF6F /* XSUIFit.m in Sources */,
 				5F37AC1C24975FEA00AEEF6F /* XSLoadingView.m in Sources */,
 				5F6B254024ED2AEC00BF1979 /* XSReachability.m in Sources */,
@@ -368,6 +391,7 @@
 				5F37AC1D24975FEA00AEEF6F /* XSUITextField.m in Sources */,
 				5F37AC1424975FEA00AEEF6F /* XSNetRequestManager.m in Sources */,
 				5F37AC1524975FEA00AEEF6F /* UIViewController+XSNetRequestManager.m in Sources */,
+				5FAD2F4C26818DD800B00743 /* XSArray.m in Sources */,
 				5F37AC1024975FEA00AEEF6F /* XSNetRequestError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +425,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -462,6 +487,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -503,7 +529,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = XSSharedUnit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -528,7 +554,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = XSSharedUnit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

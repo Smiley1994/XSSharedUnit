@@ -18,6 +18,7 @@
 #define SCALE_SIZE   ([UIScreen mainScreen].bounds.size.width / 375.0)//适配尺寸宏
 #define NAVIGATION_HEIGHT 64.0
 
+// 刘海屏适配
 #define kWindow [(AppDelegate *)[[UIApplication sharedApplication] delegate] window]
 #define IOS11_OR_LATER_SPACE(par) \
 ({\
@@ -26,7 +27,6 @@ if (@available(iOS 11.0, *))\
 space = par;\
 (space);\
 })
-
 #define TOP_SPACE IOS11_OR_LATER_SPACE(kWindow.safeAreaInsets.top)
 #define TOP_ACTIVE_SPACE IOS11_OR_LATER_SPACE(MAX(0, kWindow.safeAreaInsets.top-20))
 #define BOTTOM_SPACE IOS11_OR_LATER_SPACE(kWindow.safeAreaInsets.bottom)
