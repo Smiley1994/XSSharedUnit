@@ -45,10 +45,12 @@
 		5F6B254124ED2AEC00BF1979 /* XSReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F6B253F24ED2AEC00BF1979 /* XSReachability.h */; };
 		5F6B254424ED2DEA00BF1979 /* UIDevice+XSDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F6B254224ED2DEA00BF1979 /* UIDevice+XSDeviceInfo.h */; };
 		5F6B254524ED2DEA00BF1979 /* UIDevice+XSDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6B254324ED2DEA00BF1979 /* UIDevice+XSDeviceInfo.m */; };
-		5FAD2F4B26818DD800B00743 /* XSArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FAD2F4926818DD800B00743 /* XSArray.h */; };
-		5FAD2F4C26818DD800B00743 /* XSArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FAD2F4A26818DD800B00743 /* XSArray.m */; };
-		5FAD2F512681C0DF00B00743 /* XSDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FAD2F4F2681C0DF00B00743 /* XSDictionary.h */; };
-		5FAD2F522681C0DF00B00743 /* XSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FAD2F502681C0DF00B00743 /* XSDictionary.m */; };
+		5F7CC60C2694537C002100C1 /* NNValidationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F7CC60A2694537B002100C1 /* NNValidationView.h */; };
+		5F7CC60D2694537C002100C1 /* NNValidationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7CC60B2694537C002100C1 /* NNValidationView.m */; };
+		5F7CC614269453C8002100C1 /* XSArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F7CC610269453C7002100C1 /* XSArray.h */; };
+		5F7CC615269453C8002100C1 /* XSArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7CC611269453C7002100C1 /* XSArray.m */; };
+		5F7CC616269453C8002100C1 /* XSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7CC612269453C7002100C1 /* XSDictionary.m */; };
+		5F7CC617269453C8002100C1 /* XSDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F7CC613269453C8002100C1 /* XSDictionary.h */; };
 		A8A07A50D45C0E77FCA6A47B /* Pods_XSSharedUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839DECE1DCFC522E88FF76A4 /* Pods_XSSharedUnit.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,10 +96,12 @@
 		5F6B253F24ED2AEC00BF1979 /* XSReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSReachability.h; sourceTree = "<group>"; };
 		5F6B254224ED2DEA00BF1979 /* UIDevice+XSDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+XSDeviceInfo.h"; sourceTree = "<group>"; };
 		5F6B254324ED2DEA00BF1979 /* UIDevice+XSDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+XSDeviceInfo.m"; sourceTree = "<group>"; };
-		5FAD2F4926818DD800B00743 /* XSArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSArray.h; sourceTree = "<group>"; };
-		5FAD2F4A26818DD800B00743 /* XSArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSArray.m; sourceTree = "<group>"; };
-		5FAD2F4F2681C0DF00B00743 /* XSDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSDictionary.h; sourceTree = "<group>"; };
-		5FAD2F502681C0DF00B00743 /* XSDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSDictionary.m; sourceTree = "<group>"; };
+		5F7CC60A2694537B002100C1 /* NNValidationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNValidationView.h; sourceTree = "<group>"; };
+		5F7CC60B2694537C002100C1 /* NNValidationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNValidationView.m; sourceTree = "<group>"; };
+		5F7CC610269453C7002100C1 /* XSArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSArray.h; sourceTree = "<group>"; };
+		5F7CC611269453C7002100C1 /* XSArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSArray.m; sourceTree = "<group>"; };
+		5F7CC612269453C7002100C1 /* XSDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSDictionary.m; sourceTree = "<group>"; };
+		5F7CC613269453C8002100C1 /* XSDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSDictionary.h; sourceTree = "<group>"; };
 		839DECE1DCFC522E88FF76A4 /* Pods_XSSharedUnit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XSSharedUnit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A506A3B7B9BA3B5F779C91EB /* Pods-XSSharedUnit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSSharedUnit.debug.xcconfig"; path = "Target Support Files/Pods-XSSharedUnit/Pods-XSSharedUnit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +181,8 @@
 		5F37ABF024975FE900AEEF6F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5F7CC60A2694537B002100C1 /* NNValidationView.h */,
+				5F7CC60B2694537C002100C1 /* NNValidationView.m */,
 				5F37ABF424975FE900AEEF6F /* XSLoadingView.h */,
 				5F37ABF224975FE900AEEF6F /* XSLoadingView.m */,
 				5F37ABF124975FE900AEEF6F /* XSUITextField.h */,
@@ -231,10 +237,10 @@
 			children = (
 				5F42704125A43ACE0088DBDF /* DataUtils.h */,
 				5F42704225A43ACE0088DBDF /* DataUtils.m */,
-				5FAD2F4926818DD800B00743 /* XSArray.h */,
-				5FAD2F4A26818DD800B00743 /* XSArray.m */,
-				5FAD2F4F2681C0DF00B00743 /* XSDictionary.h */,
-				5FAD2F502681C0DF00B00743 /* XSDictionary.m */,
+				5F7CC610269453C7002100C1 /* XSArray.h */,
+				5F7CC611269453C7002100C1 /* XSArray.m */,
+				5F7CC613269453C8002100C1 /* XSDictionary.h */,
+				5F7CC612269453C7002100C1 /* XSDictionary.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -256,6 +262,7 @@
 			files = (
 				5F37AC1E24975FEA00AEEF6F /* XSLoadingView.h in Headers */,
 				5F6B254424ED2DEA00BF1979 /* UIDevice+XSDeviceInfo.h in Headers */,
+				5F7CC60C2694537C002100C1 /* NNValidationView.h in Headers */,
 				5F37AC1124975FEA00AEEF6F /* UIViewController+XSNetRequestManager.h in Headers */,
 				5F37AC1624975FEA00AEEF6F /* XSNetRequestError.h in Headers */,
 				5F6B253D24ED290100BF1979 /* XSDeviceDefine.h in Headers */,
@@ -266,13 +273,13 @@
 				5F37AC1824975FEA00AEEF6F /* XSNetRequestManager.h in Headers */,
 				5F6B254124ED2AEC00BF1979 /* XSReachability.h in Headers */,
 				5F42704325A43ACE0088DBDF /* DataUtils.h in Headers */,
+				5F7CC617269453C8002100C1 /* XSDictionary.h in Headers */,
 				5F37ABDE24975AC200AEEF6F /* XSSharedUnit.h in Headers */,
-				5FAD2F4B26818DD800B00743 /* XSArray.h in Headers */,
 				5F37AC1324975FEA00AEEF6F /* XSNetRequest.h in Headers */,
+				5F7CC614269453C8002100C1 /* XSArray.h in Headers */,
 				5F37AC2D24975FEA00AEEF6F /* UIView+ExtraTag.h in Headers */,
 				5F37AC1724975FEA00AEEF6F /* XSNetRequestErrorCode.h in Headers */,
 				5F6B253B24ED28D100BF1979 /* XSDeviceInfo.h in Headers */,
-				5FAD2F512681C0DF00B00743 /* XSDictionary.h in Headers */,
 				5F37AC2C24975FEA00AEEF6F /* NSObject+CrashHandle.h in Headers */,
 				5F37AC1B24975FEA00AEEF6F /* XSUITextField.h in Headers */,
 				5F37AC2824975FEA00AEEF6F /* UIView+Action.h in Headers */,
@@ -380,19 +387,20 @@
 				5F37AC2924975FEA00AEEF6F /* UIView+ExtraTag.m in Sources */,
 				5F37AC2724975FEA00AEEF6F /* NSObject+CrashHandle.m in Sources */,
 				5F37AC2E24975FEA00AEEF6F /* NSObject+Swizzling.m in Sources */,
+				5F7CC616269453C8002100C1 /* XSDictionary.m in Sources */,
 				5F42704425A43ACE0088DBDF /* DataUtils.m in Sources */,
-				5FAD2F522681C0DF00B00743 /* XSDictionary.m in Sources */,
 				5F37AC2F24975FEA00AEEF6F /* XSUIFit.m in Sources */,
 				5F37AC1C24975FEA00AEEF6F /* XSLoadingView.m in Sources */,
 				5F6B254024ED2AEC00BF1979 /* XSReachability.m in Sources */,
+				5F7CC60D2694537C002100C1 /* NNValidationView.m in Sources */,
 				5F37AC1A24975FEA00AEEF6F /* XSNetRequestProgress.m in Sources */,
 				5F37AC2B24975FEA00AEEF6F /* UIView+Action.m in Sources */,
 				5F37AC1924975FEA00AEEF6F /* XSNetRequest.m in Sources */,
 				5F37AC1D24975FEA00AEEF6F /* XSUITextField.m in Sources */,
 				5F37AC1424975FEA00AEEF6F /* XSNetRequestManager.m in Sources */,
 				5F37AC1524975FEA00AEEF6F /* UIViewController+XSNetRequestManager.m in Sources */,
-				5FAD2F4C26818DD800B00743 /* XSArray.m in Sources */,
 				5F37AC1024975FEA00AEEF6F /* XSNetRequestError.m in Sources */,
+				5F7CC615269453C8002100C1 /* XSArray.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,7 +31,9 @@
 @end
 
 
-@interface XSDictionary ()
+@interface XSDictionary () {
+    
+}
 
 @end
 
