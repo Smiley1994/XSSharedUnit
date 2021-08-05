@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "XSSharedUnit"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "common library~~"
   s.homepage     = "https://github.com/Smiley1994"
   s.license      = "MIT"
